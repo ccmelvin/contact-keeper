@@ -14,6 +14,8 @@ import AlertState from './context/alert/AlertState';
 import setAuthToken from './utils/setAuthToken';
 import './App.css';
 
+import { withAuthenticator } from 'aws-amplify-react';
+
 if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
@@ -43,4 +45,6 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App, {
+  includeGreetings: true
+});

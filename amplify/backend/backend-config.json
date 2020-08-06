@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"newcontactkeeper5602d139": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
